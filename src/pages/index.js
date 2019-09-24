@@ -1,20 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import HeaderNav from "../components/HeaderNav"
-import Footer from "../components/Footer"
+import Layout from "../components/Layout"
 
 const IndexPage = () => {
   return (
-    <div>
-      <HeaderNav />
+    <Layout>
       <h1> Hello.</h1>
       <h2>I'm Cody, a full-stack developer looking to leave Knoxville.</h2>
       <p>
         Need a Developer? <Link to="/contact">Contact me.</Link>
       </p>
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 export default IndexPage
