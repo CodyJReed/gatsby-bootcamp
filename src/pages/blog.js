@@ -19,10 +19,17 @@ const BlogPage = () => {
     }
   `)
 
-  console.log(posts)
   return (
     <Layout>
       <h1>Blog</h1>
+      <ol>
+        {posts.allMarkdownRemark.edges.map((post, index) => (
+          <li key={index}>
+            <h2>{post.node.frontmatter.title}</h2>
+            <p>{post.node.frontmatter.date}</p>
+          </li>
+        ))}
+      </ol>
     </Layout>
   )
 }
