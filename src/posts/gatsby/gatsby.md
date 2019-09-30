@@ -5,6 +5,8 @@ date: "2019-09-24"
 
 I just launched a new portfolio!
 
+![Dingo by Sylvia Ritter](./dingo.jpg)
+
 #Topics Covered
 
 1. Gatsby
